@@ -350,6 +350,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="TopDown2DShooter.csproj">
+      <Project>{86D1A170-B0D6-1B9F-DA43-A8A8E2AE2317}</Project>
+      <Name>TopDown2DShooter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="C:\Users\wmasters\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.standardevents@1.0.13\Editor\Importer.cs" />
   </ItemGroup>
   <ItemGroup>
