@@ -187,6 +187,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &411541827
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156964047070608, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713058500137372, guid: edc390be9f02c5f479af1270bef0aec4,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 862223049}
+    - target: {fileID: 114220581007709636, guid: edc390be9f02c5f479af1270bef0aec4,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 862223049}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: edc390be9f02c5f479af1270bef0aec4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!20 &519420031 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20171529193182804, guid: 9b3fa12f534d9714fb47d79a35bd0bfc,
