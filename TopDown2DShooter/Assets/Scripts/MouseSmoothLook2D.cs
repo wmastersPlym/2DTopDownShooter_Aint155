@@ -19,4 +19,6 @@ public class MouseSmoothLook2D : MonoBehaviour {
         Quaternion newRotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, rotZ + adjustmentAngle));
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * smoothing);
     }
+
+    
 }
