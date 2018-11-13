@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game.unity
     guid: e1389996cf4010f4f8a012c84e9b5688
   - enabled: 1
+    path: Assets/Scenes/Zombie shooter level 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 04959fcdcfd4294419a251b58b3dd9f2
   m_configObjects: {}
