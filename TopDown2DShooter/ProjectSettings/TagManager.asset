@@ -17,7 +17,7 @@ TagManager:
   - Enemy Health
   - Player Health
   - Enemy Damage
-  - 
+  - Obstical
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Enemie
     uniqueID: 1068622873
+    locked: 0
+  - name: Pickup
+    uniqueID: 396569469
     locked: 0
   - name: FX
     uniqueID: 2819720767
