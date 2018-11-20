@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114698161250321044}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,6 +138,10 @@ MonoBehaviour:
     type: 2}
   bulletSpawn: {fileID: 4960345141520784}
   fireTime: 0.1
+  roundsPerMag: 6
+  realoadTime: 2
+  realoadUIText: {fileID: 0}
+  ammoText: {fileID: 0}
 --- !u!114 &114712675498860894
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1773759050546864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23, y: 0.77, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4769844574932166}
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1595565941321024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.68, y: 2.44, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4722946286613370}
@@ -159,6 +159,10 @@ MonoBehaviour:
     type: 2}
   bulletSpawn: {fileID: 4722946286613370}
   fireTime: 0.25
+  roundsPerMag: 6
+  realoadTime: 2
+  realoadUIText: {fileID: 0}
+  ammoText: {fileID: 0}
 --- !u!114 &114791714039621450
 MonoBehaviour:
   m_ObjectHideFlags: 1

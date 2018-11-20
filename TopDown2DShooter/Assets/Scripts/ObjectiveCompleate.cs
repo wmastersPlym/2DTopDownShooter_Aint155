@@ -6,7 +6,7 @@ public class ObjectiveCompleate : MonoBehaviour {
 
     public void CompleateObjective()
     {
-        print("ObjectiveCompleate");
+        //print("ObjectiveCompleate");
         GameObject.Find("Game System").GetComponent<GameManager>().UpdateObjectives();
     }
 }
