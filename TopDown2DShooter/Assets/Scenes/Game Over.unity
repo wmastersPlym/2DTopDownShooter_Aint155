@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -148.99997, y: -15.049988}
+  m_AnchoredPosition: {x: -164, y: -15.049988}
   m_SizeDelta: {x: 71.42, y: 71.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178910235
@@ -251,7 +251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Died
+  m_Text: Game Over
 --- !u!222 &232818763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -425,6 +425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0126c8e08ea54fa43f53f58377fbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsLevel: 0
+  numberOfObjectivesLeft: 0
 --- !u!4 &490225308
 Transform:
   m_ObjectHideFlags: 0
@@ -736,7 +738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 148.20004, y: -15.049988}
+  m_AnchoredPosition: {x: 157, y: -15.049988}
   m_SizeDelta: {x: 71.42, y: 71.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1386197452

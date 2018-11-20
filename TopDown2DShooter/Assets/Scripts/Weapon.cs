@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Weapon : MonoBehaviour {
@@ -11,14 +12,16 @@ public class Weapon : MonoBehaviour {
     public int roundsPerMag = 6;
     public float realoadTime = 2f;
     public GameObject realoadUIText;
+    public Text ammoText;
 
     private bool isFiring = false;
-    public int roundsLeft = 0;
+    private int roundsLeft = 0;
 
     private void Start() {
         roundsLeft = roundsPerMag;
         realoadUIText = GameObject.Find("txtRealoding");
         realoadUIText.GetComponent<HideShowText>().Hide();
+        UpdateBulletsLeftText();
     }
 
     void SetFiring()
@@ -30,8 +33,9 @@ public class Weapon : MonoBehaviour {
     void Realoading() {
         isFiring = false;
         roundsLeft = roundsPerMag;
-        print("FinishedRealoading");
+        //print("FinishedRealoading");
         realoadUIText.GetComponent<HideShowText>().Hide();
+        UpdateBulletsLeftText();
     }
 
     void StartRealoding() {
@@ -44,6 +48,7 @@ public class Weapon : MonoBehaviour {
         isFiring = true;
         Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         roundsLeft--;
+        UpdateBulletsLeftText();
         if(GetComponent<AudioSource>() != null)
         {
             GetComponent<AudioSource>().Play();
@@ -54,6 +59,13 @@ public class Weapon : MonoBehaviour {
             Invoke("SetFiring", fireTime);
         }
 
+    }
+    void UpdateBulletsLeftText()
+    {
+        if(ammoText != null)
+        {
+            ammoText.text = string.Format("Ammo: {0}/{1}", roundsLeft, roundsPerMag);
+        }
     }
 
     private void Update()

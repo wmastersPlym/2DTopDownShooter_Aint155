@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
+    public bool IsLevel;
+    public int numberOfObjectivesLeft;
+
     public void StartGame()
     {
         SceneManager.LoadScene("Zombie shooter level 1");
@@ -23,6 +26,22 @@ public class GameManager : MonoBehaviour {
 
     public void QuitGame() {
         Application.Quit();
+    }
+
+    private void Start()
+    {
+        numberOfObjectivesLeft = GameObject.FindGameObjectsWithTag("Objective").Length;
+    }
+
+    public void UpdateObjectives()
+    {
+        if(numberOfObjectivesLeft <= 1)
+        {
+            EndGame();
+        } else
+        {
+            numberOfObjectivesLeft--;
+        }
     }
 
 
