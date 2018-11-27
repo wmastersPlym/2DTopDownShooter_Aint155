@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+public class ScoreObj
+{
+    public int highScore;
+    public string highScoreName;
+    public int recentScore;
+}
+
 public class GameManager : MonoBehaviour {
 
     public bool IsLevel;

@@ -440,7 +440,7 @@ RectTransform:
   m_Children:
   - {fileID: 1533210241}
   m_Father: {fileID: 1550464784}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -561,7 +561,7 @@ RectTransform:
   m_Children:
   - {fileID: 262725232}
   m_Father: {fileID: 1550464784}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -768,7 +768,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MAIN MANU
+  m_Text: MAIN MENU
 --- !u!222 &1533210243
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -861,8 +861,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 232818761}
-  - {fileID: 797871991}
   - {fileID: 951279689}
+  - {fileID: 797871991}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
