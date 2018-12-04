@@ -66,11 +66,17 @@ public class HurtTrigger : MonoBehaviour
         Invoke("ResetTrigger", resetTime);
     }
 
-
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            gameObject.GetComponentInParent<A>
+        }
+    }
     /*
      * ResetTrigger
      * enables the collider, ready to deal more damage
-     */ 
+     */
     private void ResetTrigger()
     {
         /*

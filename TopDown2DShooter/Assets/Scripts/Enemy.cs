@@ -10,6 +10,8 @@ public class EnemySpawnedEvent : UnityEvent<Transform> { }
 public class Enemy : MonoBehaviour {
 
     public EnemySpawnedEvent onSpawn;
+    public float swingDistance;
+
 
     private void Start()
     {

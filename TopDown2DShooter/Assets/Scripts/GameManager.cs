@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
 
     public bool IsLevel;
     public int numberOfObjectivesLeft;
+    public ObjectivesLeftUI uiText;
 
     public void StartGame()
     {
@@ -43,7 +44,11 @@ public class GameManager : MonoBehaviour {
 
     private void Start()
     {
-        numberOfObjectivesLeft = GameObject.FindGameObjectsWithTag("Objective").Length;
+        if(IsLevel)
+        {
+            numberOfObjectivesLeft = GameObject.FindGameObjectsWithTag("Objective").Length;
+            UpdateObjectivesUI();
+        }
     }
 
     public void UpdateObjectives()
@@ -54,7 +59,13 @@ public class GameManager : MonoBehaviour {
         } else
         {
             numberOfObjectivesLeft--;
+            UpdateObjectivesUI();
         }
+    }
+
+    public void UpdateObjectivesUI()
+    {
+        uiText.UpdateText(numberOfObjectivesLeft);
     }
 
 
