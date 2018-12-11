@@ -64,13 +64,24 @@ public class HurtTrigger : MonoBehaviour
          * this will set up our OnTriggerEnter method to run again
          */
         Invoke("ResetTrigger", resetTime);
+
+
+
+        if (collision.tag == "Player")
+        {
+            gameObject.GetComponentInParent<Animator>().SetBool("Swing", true);
+        }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        
+    }*/
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
         {
-            gameObject.GetComponentInParent<A>
+            gameObject.GetComponentInParent<Animator>().SetBool("Swing", false);
         }
     }
     /*

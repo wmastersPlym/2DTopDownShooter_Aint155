@@ -465,6 +465,29 @@
     <Compile Include="Assets\Pathfinding ToolKit\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
     <Compile Include="Assets\Pathfinding ToolKit\AstarPathfindingProject\Utilities\RetainedGizmos.cs" />
     <Compile Include="Assets\Pathfinding ToolKit\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+    <Compile Include="Assets\Scripts\AddScore.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\DestroyOnDie.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyPathFinder.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameUI.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\HideShowText.cs" />
+    <Compile Include="Assets\Scripts\HurtTrigger.cs" />
+    <Compile Include="Assets\Scripts\MouseSmoothLook2D.cs" />
+    <Compile Include="Assets\Scripts\MoveTowardsObject.cs" />
+    <Compile Include="Assets\Scripts\ObjectiveCompleate.cs" />
+    <Compile Include="Assets\Scripts\ObjectivesLeftUI.cs" />
+    <Compile Include="Assets\Scripts\PickUp.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\SmoothFollow2D.cs" />
+    <Compile Include="Assets\Scripts\SmoothLookAtTarget.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\TimerEvent.cs" />
+    <Compile Include="Assets\Scripts\TopDownCharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\UIFollowMouse.cs" />
+    <Compile Include="Assets\Scripts\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Pathfinding ToolKit\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
@@ -478,6 +501,29 @@
     <None Include="Assets\Pathfinding ToolKit\AstarPathfindingProject\Readme.txt" />
     <None Include="Assets\Pathfinding ToolKit\AstarPathfindingProject\Readme_upgrading.txt" />
     <None Include="Assets\Pathfinding ToolKit\AstarPathfindingProject\link.xml" />
+    <None Include="Assets\Scripts\AddScore.cs.meta" />
+    <None Include="Assets\Scripts\Bullet.cs.meta" />
+    <None Include="Assets\Scripts\DestroyOnDie.cs.meta" />
+    <None Include="Assets\Scripts\Enemy.cs.meta" />
+    <None Include="Assets\Scripts\EnemyPathFinder.cs.meta" />
+    <None Include="Assets\Scripts\GameManager.cs.meta" />
+    <None Include="Assets\Scripts\GameUI.cs.meta" />
+    <None Include="Assets\Scripts\HealthSystem.cs.meta" />
+    <None Include="Assets\Scripts\HideShowText.cs.meta" />
+    <None Include="Assets\Scripts\HurtTrigger.cs.meta" />
+    <None Include="Assets\Scripts\MouseSmoothLook2D.cs.meta" />
+    <None Include="Assets\Scripts\MoveTowardsObject.cs.meta" />
+    <None Include="Assets\Scripts\ObjectiveCompleate.cs.meta" />
+    <None Include="Assets\Scripts\ObjectivesLeftUI.cs.meta" />
+    <None Include="Assets\Scripts\PickUp.cs.meta" />
+    <None Include="Assets\Scripts\Player.cs.meta" />
+    <None Include="Assets\Scripts\SmoothFollow2D.cs.meta" />
+    <None Include="Assets\Scripts\SmoothLookAtTarget.cs.meta" />
+    <None Include="Assets\Scripts\Spawner.cs.meta" />
+    <None Include="Assets\Scripts\TimerEvent.cs.meta" />
+    <None Include="Assets\Scripts\TopDownCharacterController2D.cs.meta" />
+    <None Include="Assets\Scripts\UIFollowMouse.cs.meta" />
+    <None Include="Assets\Scripts\Weapon.cs.meta" />
     <None Include="C:\Users\wmasters\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\wmasters\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="C:\Users\wmasters\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
@@ -488,6 +534,7 @@
     <None Include="C:\Users\wmasters\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="C:\Users\wmasters\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>
