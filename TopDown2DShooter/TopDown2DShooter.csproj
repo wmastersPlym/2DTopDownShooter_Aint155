@@ -474,6 +474,7 @@
     <Compile Include="Assets\Scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\HideShowText.cs" />
+    <Compile Include="Assets\Scripts\HighScoreUI.cs" />
     <Compile Include="Assets\Scripts\HurtTrigger.cs" />
     <Compile Include="Assets\Scripts\MouseSmoothLook2D.cs" />
     <Compile Include="Assets\Scripts\MoveTowardsObject.cs" />
@@ -510,6 +511,7 @@
     <None Include="Assets\Scripts\GameUI.cs.meta" />
     <None Include="Assets\Scripts\HealthSystem.cs.meta" />
     <None Include="Assets\Scripts\HideShowText.cs.meta" />
+    <None Include="Assets\Scripts\HighScoreUI.cs.meta" />
     <None Include="Assets\Scripts\HurtTrigger.cs.meta" />
     <None Include="Assets\Scripts\MouseSmoothLook2D.cs.meta" />
     <None Include="Assets\Scripts\MoveTowardsObject.cs.meta" />
