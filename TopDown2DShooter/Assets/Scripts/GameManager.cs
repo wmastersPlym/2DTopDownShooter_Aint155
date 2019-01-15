@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class ScoreObj
@@ -16,17 +17,26 @@ public class GameManager : MonoBehaviour {
     public bool IsLevel;
     public int numberOfObjectivesLeft;
     public ObjectivesLeftUI uiText;
+    public int currentLevel = 0;
+
+    private string[] levelNames = { "Level1", "Level2", "Level3", "Level4", "Level5", };
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Zombie shooter level 1");
+        SceneManager.LoadScene("Level1");
+        LevelManager.currentLevel = 1;
+    }
+
+    public void SetCurrentLevel() {
+        print(SceneManager.GetActiveScene().name);
     }
 
     public void EndGame()
     {
-        SceneManager.LoadScene("Game Over");
-    }
 
+        SceneManager.LoadScene("Game Over");
+
+    }
 
     public void BackToMainMenu()
     {
@@ -36,14 +46,27 @@ public class GameManager : MonoBehaviour {
     public void Help()
     {
         SceneManager.LoadScene("Help");
+        print("TEST");
     }
 
     public void QuitGame() {
         Application.Quit();
     }
 
+    public void LevelComplete() {
+        SceneManager.LoadScene("Level Complete");
+    }
+
+    public void NextLevel() {
+        print("TEST");
+        print(LevelManager.currentLevel);
+        SceneManager.LoadScene(LevelManager.levelNames[LevelManager.currentLevel]);
+        LevelManager.currentLevel = LevelManager.currentLevel+1;
+    }
+
     private void Start()
     {
+        
         if(IsLevel)
         {
             numberOfObjectivesLeft = GameObject.FindGameObjectsWithTag("Objective").Length;
@@ -55,7 +78,7 @@ public class GameManager : MonoBehaviour {
     {
         if(numberOfObjectivesLeft <= 1)
         {
-            EndGame();
+            LevelComplete();
         } else
         {
             numberOfObjectivesLeft--;
@@ -65,7 +88,10 @@ public class GameManager : MonoBehaviour {
 
     public void UpdateObjectivesUI()
     {
-        uiText.UpdateText(numberOfObjectivesLeft);
+        if(uiText != null) {
+            uiText.UpdateText(numberOfObjectivesLeft);
+
+        }
     }
 
 

@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 114321820465814726}
   m_Layer: 9
   m_Name: Bandit Spawner
-  m_TagString: Objective
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,8 +41,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1708271703594704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.26, y: -0.20086816, z: 0.20439485}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9, y: 1, z: 0.20439485}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -139,6 +139,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  gruntAudio: {fileID: 0}
+  deathAudio: {fileID: 0}
 --- !u!114 &114765888010892530
 MonoBehaviour:
   m_ObjectHideFlags: 1

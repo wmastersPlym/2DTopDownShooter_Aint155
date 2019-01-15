@@ -313,7 +313,7 @@ MonoBehaviour:
     Use R to reaload
 
 
-    Collect all the golden nuggets and destroy all the bandit filled barrels to win.'
+    Collect all the golden nuggets to progress to the next level'
 --- !u!222 &262725234
 CanvasRenderer:
   m_ObjectHideFlags: 0

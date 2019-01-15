@@ -67,7 +67,7 @@ public class HurtTrigger : MonoBehaviour
 
 
 
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && gameObject.tag == "Enemy")
         {
             gameObject.GetComponentInParent<Animator>().SetBool("Swing", true);
         }
@@ -79,7 +79,7 @@ public class HurtTrigger : MonoBehaviour
     }*/
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && tag == "Enemy")
         {
             gameObject.GetComponentInParent<Animator>().SetBool("Swing", false);
         }

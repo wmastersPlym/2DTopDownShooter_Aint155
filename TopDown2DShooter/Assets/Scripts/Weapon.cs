@@ -13,11 +13,17 @@ public class Weapon : MonoBehaviour {
     public float realoadTime = 2f;
     public GameObject realoadUIText;
     public Text ammoText;
+    public AudioClip shootAudio;
+    public AudioClip reloadAudio;
+    
+
 
     private bool isFiring = false;
     private int roundsLeft = 0;
+    private AudioSource audioSource;
 
     private void Start() {
+        audioSource = GetComponent<AudioSource>();
         roundsLeft = roundsPerMag;
         realoadUIText = GameObject.Find("txtRealoding");
         realoadUIText.GetComponent<HideShowText>().Hide();
@@ -31,6 +37,8 @@ public class Weapon : MonoBehaviour {
 
     
     void Realoading() {
+        audioSource.clip = reloadAudio;
+        audioSource.Play();
         isFiring = false;
         roundsLeft = roundsPerMag;
         //print("FinishedRealoading");
@@ -51,6 +59,8 @@ public class Weapon : MonoBehaviour {
         UpdateBulletsLeftText();
         if(GetComponent<AudioSource>() != null)
         {
+
+            audioSource.clip = shootAudio;
             GetComponent<AudioSource>().Play();
         }
         if (roundsLeft <= 0) {

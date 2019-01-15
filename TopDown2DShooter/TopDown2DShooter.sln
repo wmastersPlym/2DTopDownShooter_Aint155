@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopDown2DShooter", "TopDown2DShooter.csproj", "{86D1A170-B0D6-1B9F-DA43-A8A8E2AE2317}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopDown2DShooter", "Assembly-CSharp.csproj", "{397B5309-DDDB-74AA-875C-AA21473EB201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopDown2DShooter.Editor", "TopDown2DShooter.Editor.csproj", "{9EAA95E6-6F89-DCEE-4DFC-030FA6F019BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopDown2DShooter", "AstarPathfindingProject.csproj", "{9A4D23D3-DEE0-FF85-76AD-1F76F6C833F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopDown2DShooter", "AstarPathfindingProjectEditor.csproj", "{32E35932-0F3B-2F27-2F26-1445A3B9C89C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopDown2DShooter", "PackageToolsEditor.csproj", "{FDB32F3D-0910-8819-2C5B-8B17F0DF669B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +15,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{86D1A170-B0D6-1B9F-DA43-A8A8E2AE2317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86D1A170-B0D6-1B9F-DA43-A8A8E2AE2317}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86D1A170-B0D6-1B9F-DA43-A8A8E2AE2317}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86D1A170-B0D6-1B9F-DA43-A8A8E2AE2317}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EAA95E6-6F89-DCEE-4DFC-030FA6F019BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EAA95E6-6F89-DCEE-4DFC-030FA6F019BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EAA95E6-6F89-DCEE-4DFC-030FA6F019BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EAA95E6-6F89-DCEE-4DFC-030FA6F019BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397B5309-DDDB-74AA-875C-AA21473EB201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397B5309-DDDB-74AA-875C-AA21473EB201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397B5309-DDDB-74AA-875C-AA21473EB201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397B5309-DDDB-74AA-875C-AA21473EB201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4D23D3-DEE0-FF85-76AD-1F76F6C833F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4D23D3-DEE0-FF85-76AD-1F76F6C833F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4D23D3-DEE0-FF85-76AD-1F76F6C833F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4D23D3-DEE0-FF85-76AD-1F76F6C833F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E35932-0F3B-2F27-2F26-1445A3B9C89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E35932-0F3B-2F27-2F26-1445A3B9C89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E35932-0F3B-2F27-2F26-1445A3B9C89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E35932-0F3B-2F27-2F26-1445A3B9C89C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB32F3D-0910-8819-2C5B-8B17F0DF669B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB32F3D-0910-8819-2C5B-8B17F0DF669B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB32F3D-0910-8819-2C5B-8B17F0DF669B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB32F3D-0910-8819-2C5B-8B17F0DF669B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A79EB5E2-ABE0-4D81-A670-6D76DEE5A5AB}
 	EndGlobalSection
 EndGlobal
