@@ -22,9 +22,9 @@
 ### How to run the game
 1. goto https://williammasters.itch.io/range-detective
 2. Download the zip file for the game
-    i. Click "download now"
-    ii. Click "No thanks, just take me to the downloads"
-    iii. Click "Download"
+    1. Click "download now"
+    2. Click "No thanks, just take me to the downloads"
+    3. Click "Download"
 3. Unzip the downloaded file
     * A tool like 7zip or winrar is needed
 4. Double click the "Range Detective.exe" file
