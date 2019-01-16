@@ -36,6 +36,7 @@
 * wooden Gui Assests: https://assetstore.unity.com/packages/2d/gui/fantasy-wooden-gui-package-103817
 * in game music: http://freemusicarchive.org/music/Lobo_Loco/Vagabond/Hey_Go_ID_1015
 * gun shot sound: http://soundbible.com/2122-40-Smith-Wesson.html
+* Reload sound: http://soundbible.com/414-Eject-Clip-And-Re-Load.html
 - - - -
 ### Links:
 - trello: https://trello.com/b/OWuOh2KX/2dtopdownshooter
