@@ -18,8 +18,7 @@ public class GameManager : MonoBehaviour {
     public int numberOfObjectivesLeft;
     public ObjectivesLeftUI uiText;
     public int currentLevel = 0;
-
-    private string[] levelNames = { "Level1", "Level2", "Level3", "Level4", "Level5", };
+    
 
     public void StartGame()
     {
@@ -54,12 +53,12 @@ public class GameManager : MonoBehaviour {
     }
 
     public void LevelComplete() {
+
+        LevelManager.currentScore += GameObject.Find("Canvas").GetComponent<GameUI>().playerScore;
         SceneManager.LoadScene("Level Complete");
     }
 
     public void NextLevel() {
-        print("TEST");
-        print(LevelManager.currentLevel);
         SceneManager.LoadScene(LevelManager.levelNames[LevelManager.currentLevel]);
         LevelManager.currentLevel = LevelManager.currentLevel+1;
     }
@@ -71,7 +70,13 @@ public class GameManager : MonoBehaviour {
         {
             numberOfObjectivesLeft = GameObject.FindGameObjectsWithTag("Objective").Length;
             UpdateObjectivesUI();
+            UpdatePlayerScore();
         }
+    }
+
+    public void UpdatePlayerScore() {
+        GameObject.Find("Canvas").GetComponent<GameUI>().playerScore = LevelManager.currentScore;
+
     }
 
     public void UpdateObjectives()
@@ -92,6 +97,10 @@ public class GameManager : MonoBehaviour {
             uiText.UpdateText(numberOfObjectivesLeft);
 
         }
+    }
+
+    public void ClearPlayerScore() {
+        LevelManager.currentScore = 0;
     }
 
 

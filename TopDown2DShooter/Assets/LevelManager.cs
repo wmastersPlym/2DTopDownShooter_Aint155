@@ -11,6 +11,9 @@ public static class LevelManager {
         "level2",
         "level3",
         "level4",
-        "level5"
+        "level5",
+        "Game complete"
     };
+
+
 }

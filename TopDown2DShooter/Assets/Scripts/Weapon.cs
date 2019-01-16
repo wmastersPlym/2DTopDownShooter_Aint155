@@ -19,6 +19,7 @@ public class Weapon : MonoBehaviour {
 
 
     private bool isFiring = false;
+    private bool isReloading = false;
     private int roundsLeft = 0;
     private AudioSource audioSource;
 
@@ -37,16 +38,17 @@ public class Weapon : MonoBehaviour {
 
     
     void Realoading() {
-        audioSource.clip = reloadAudio;
-        audioSource.Play();
         isFiring = false;
+        isReloading = false;
         roundsLeft = roundsPerMag;
-        //print("FinishedRealoading");
         realoadUIText.GetComponent<HideShowText>().Hide();
         UpdateBulletsLeftText();
     }
 
     void StartRealoding() {
+        isReloading = true;
+        audioSource.clip = reloadAudio;
+        audioSource.Play();
         realoadUIText.GetComponent<HideShowText>().Show();
         Invoke("Realoading", realoadTime);
     }
@@ -82,12 +84,12 @@ public class Weapon : MonoBehaviour {
     {
         if(Input.GetMouseButton(0) )
         {
-            if(!isFiring)
+            if(!isFiring && !isReloading)
             {
                 Fire();
             }
         }
-        if(Input.GetKeyDown("r")) {
+        if(Input.GetKeyDown("r") && !isReloading) {
             StartRealoding();
         }
     }

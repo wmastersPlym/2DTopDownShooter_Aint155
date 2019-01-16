@@ -33,4 +33,8 @@ public class GameUI : MonoBehaviour {
         playerScore += theScore;
         scoreText.text = string.Format("Score: {0}", playerScore.ToString());
     }
+
+    private void Start() {
+        UpdateScore(0);
+    }
 }
